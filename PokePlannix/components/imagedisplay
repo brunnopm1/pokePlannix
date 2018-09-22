@@ -1,0 +1,41 @@
+HTTP:
+
+<div class="frameImageDisplay">
+  <div class="imageDisplay">
+    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/004.png"/>
+  </div>
+</div>
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+
+CSS:
+
+.frameImageDisplay{
+  height: auto;
+  width:  auto;
+  background-color: hsl(60, 86%, 78%);
+  border-style: double;
+  display: grid;
+  grid-template-columns: 10% 80% 10%;
+  grid-template-rows:  10% 75% 15%;
+
+}
+
+.imageDisplay {
+  border-style: double;
+  background-color: #fff;
+  border: 5px double #fff;
+  grid-column-start:2 ;
+  grid-column-end: span 1 ;
+  grid-row-start: 2 ;
+  grid-row-end:span 1 ;
+  display:flex;
+  justify-content: center;
+
+}
+
+img{
+  height : auto;
+  width: auto;
+}

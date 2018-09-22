@@ -1,0 +1,90 @@
+HTML:
+<div class="blueDial">
+
+    <button class="blueButton">1</button>
+    <button class="blueButton">2</button>
+    <button class="blueButton">3</button>
+    <button class="blueButton">4</button>
+    <button class="blueButton">5</button>
+    <button class="blueButton">6</button>
+    <button class="blueButton">7</button>
+    <button class="blueButton">8</button>
+    <button class="blueButton">9</button>
+    <button class="blueButton">E</button>
+</div>
+//////////////////////////////////////////////////////////////////////////////////
+CSS:
+.blueDial {
+  height: : 150px;
+  width: 410px;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: 50% 50%;
+  border-style: solid;
+  border-width: 2px;
+}
+
+
+.blueButton {
+  width:  80px;
+  height: 70px;
+  background-color: #00e9fe;
+  border: #000;
+  border-width: 1px;
+  border-style: solid;
+  cursor: pointer;
+  clear:left;
+}
+/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/--/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/
+/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/--/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/
+/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/--/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/
+/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/--/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/
+html:
+<div id='teste'>
+<div class="blueDial">
+    <button class="blueButton">1</button>
+    <button class="blueButton">2</button>
+    <button class="blueButton">3</button>
+    <button class="blueButton">4</button>
+    <button class="blueButton">5</button>
+    <button class="blueButton">6</button>
+    <button class="blueButton">7</button>
+    <button class="blueButton">8</button>
+    <button class="blueButton">9</button>
+    <button class="blueButton">E</button>
+</div>
+</div>
+
+
+
+/////////////////////////////////////////////////////////////////////////////////
+
+#teste{
+width: 500px;
+height: 150px;
+display: flex;
+
+}
+
+.blueDial {
+  height: : auto;
+  width: auto;
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-rows: 50% 50%;
+  border-style: solid;
+  border-width: 2px;
+  flex-grow: 1;
+}
+
+
+.blueButton {
+  width:  auto;
+  height: auto;
+  background-color: #00e9fe;
+  border: #000;
+  border-width: 1px;
+  border-style: solid;
+  cursor: pointer;
+  clear:left;
+}

@@ -1,0 +1,23 @@
+HTML:
+
+<div class="stats-display">
+
+</div>
+
+/////////////////////////////////////////////////////////////////////////////////////
+CSS:
+
+.stats-display {
+  background-color: hsl(120, 86%, 37%);
+  border-radius: 0%;
+  border: 5px solid #E6E6E6;
+  padding: 15px;
+  overflow: scroll;
+}
+h2 {
+    margin: 10px 0;
+  }
+ul {
+    margin: 10px;
+    overflow: auto;
+  }

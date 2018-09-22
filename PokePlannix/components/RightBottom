@@ -1,0 +1,45 @@
+HTML:
+<div id='bottomRight'>
+  <div class = 'bottomRightButtons'>
+    <div class="squareBlackbuttons" id='leftButton'><p>Pokedex</p></div>
+    <div class="squareBlackbuttons" id='rightButton'><p>Game</p></div>
+  </div>
+</div>
+
+///////////////////////////////////////////////////////////////////////////////////
+CSS:
+
+#bottomRight{
+  display: flex;
+  width: 500px;
+  height: 50px;
+}
+
+.bottomRightButtons{
+  height: auto;
+  width: auto;
+  display: grid;
+  grid-template-columns: 13% 33% 8% 33% 13%;
+  grid-row-start: 100%;
+  flex-grow: 1;
+}
+
+.squareBlackbuttons {
+  background-color: #404040;
+  border: #303030 5px solid;
+  color: gray;
+  cursor: pointer;
+  text-align: center;
+}
+#rightButton{
+  grid-row-start: 1;
+  grid-row-end: span 1;
+  grid-column-start: 2;
+  grid-column-end: span 1;
+}
+#leftButton{
+  grid-row-start: 1;
+  grid-row-end: span 1;
+  grid-column-start: 4;
+  grid-column-end: span 1;
+}

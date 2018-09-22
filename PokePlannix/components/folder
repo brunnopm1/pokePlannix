@@ -1,0 +1,45 @@
+HTML:
+
+<div class = 'folder'>
+  <div class ='joint' id = 'upJoint'></div>
+  <div class ='joint' id = 'downJoint'></div>
+</div>
+
+
+
+///////////////////////////////////////////////////////////////////////////////
+CSS:
+
+
+.folder {
+  background: linear-gradient(to right,#89061C, #DC0A2D , #ff6347
+,#DC0A2D,#89061C);
+  grid-column-start: 2;
+  grid-column-end: span 1;
+  grid-row-start: 1;
+  grid-row-end:span 1;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 15% 4% 62% 4% 15%
+}
+
+.joint{
+ border-style: solid ;
+ border-color: black;
+ border-width: 1px;
+
+}
+
+#upJoint{
+  grid-column-start: 1;
+  grid-column-end: span 1;
+  grid-row-start: 2;
+  grid-row-end:span 1;
+}
+
+#downJoint{
+  grid-column-start: 1;
+  grid-column-end: span 1;
+  grid-row-start: 4;
+  grid-row-end:span 1;
+}

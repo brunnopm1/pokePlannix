@@ -1,0 +1,72 @@
+HTTP:
+<div class="cross">
+  <button class="crossButton" id= 'up'></button>
+  <button class="crossButton" id= 'down'></button>
+  <button class="crossButton" id= 'left'></button>
+  <button class="crossButton" id= 'right'></button>
+  <button class="crossButton" id= 'center'> </button>
+</div>
+-------------------------------------------------------------------------------------------------------------
+<div class="cross">
+  <div class="crossButton" id= 'up'></div>
+  <div class="crossButton" id= 'down'></div>
+  <div class="crossButton" id= 'left'></div>
+  <div class="crossButton" id= 'right'></div>
+  <div class="crossButton" id= 'center'> </div>
+</div>
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////
+CSS:
+.cross{
+  width: 300px;
+  height: 400px;
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: 33% 33% 33%;
+
+}
+
+.crossButton {
+
+  background-color: #404040;
+  border: #303030;
+  color: red;
+  cursor: pointer;
+  border-style: solid;
+}
+
+#up {
+  grid-row-start: 1 ;
+  grid-row-end: span 1;
+  grid-column-start: 2 ;
+  grid-column-end: 3 ;
+}
+
+#right {
+  grid-row-start:2 ;
+  grid-row-end: span 1 ;
+  grid-column-start:3 ;
+  grid-column-end: span 1 ;
+}
+
+#down {
+  grid-row-start: 3;
+  grid-row-end: span 1 ;
+  grid-column-start: 2;
+  grid-column-end:span 1 ;
+}
+
+#left {
+  grid-row-start:2 ;
+  grid-row-end: span 1;
+  grid-column-start: 1;
+  grid-column-end:span 1 ;
+}
+
+
+#center {
+  grid-row-start:2 ;
+  grid-row-end:span 1 ;
+  grid-column-start:2 ;
+  grid-column-end:span 1 ;
+}

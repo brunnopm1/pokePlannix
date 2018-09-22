@@ -1,0 +1,34 @@
+HTML:
+<div class = 'detailsDisplay'>
+   <div class = 'detailWhiteThingy'></div>
+   <div class = 'detailWhiteThingy'></div>
+   <div class = 'detailWhiteThingy'></div>
+</div>
+
+
+///////////////////////////////////////////////////////////////////////////////////////
+CSS:
+
+
+.detailsDisplay{
+  height: auto;
+  width: auto;
+  display: flex;
+  background: #fff;
+  border-style: double;
+  border-color: black;
+  flex-direction: column;
+  align-content: space-around;
+  justify-content: space-around;
+}
+
+.detailWhiteThingy{
+  background : black;
+  color: black;
+  border-style: double;
+  border-color: red;
+  border-radius: 20%;
+  margin-left: 10%;
+  margin-right: 10%;
+
+}

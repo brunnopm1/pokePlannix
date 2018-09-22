@@ -1,0 +1,25 @@
+HTML:
+
+<div class="roundBlackButton">
+  <button class='roundButton'></button>
+</div>
+
+//////////////////////////////////////////////////////////////////////////////
+
+.roundBlackButton{
+  width: 500px;
+  height: 500px;
+  display: flex;
+
+
+}
+
+.roundButton{
+  background: #404040;
+  border-radius: 50%;
+  weight:auto;
+  height: auto;
+  flex-grow: 1;
+  z-index : 0;
+  border: 3px solid black;
+}
