@@ -374,7 +374,7 @@ img{
   border: #303030;
   color: red;
   cursor: pointer;
-  border-style: solid;
+  border-style: none;
 }
 
 #up {
@@ -382,6 +382,7 @@ img{
   grid-row-end: span 1;
   grid-column-start: 2 ;
   grid-column-end: 3 ;
+  border-left-style:inset ;
 }
 
 #right {
@@ -389,6 +390,7 @@ img{
   grid-row-end: span 1 ;
   grid-column-start:3 ;
   grid-column-end: span 1 ;
+  border-bottom-style: inset;
 }
 
 #down {
@@ -396,6 +398,8 @@ img{
   grid-row-end: span 1 ;
   grid-column-start: 2;
   grid-column-end:span 1 ;
+  border-left-style: inset;
+  border-bottom-style: inset;
 }
 
 #left {
@@ -403,6 +407,8 @@ img{
   grid-row-end: span 1;
   grid-column-start: 1;
   grid-column-end:span 1 ;
+  border-left-style: inset;
+  border-bottom-style: inset;
 }
 
 
