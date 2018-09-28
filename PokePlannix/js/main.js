@@ -79,7 +79,7 @@ const buscaPokemon= st => { //busca, o pokemon;
     cheat.get(`${st}/`).then( response => {
       let pokemon = new Pokemon(response.data);
       pokemon.pokemonToHTML();
-      let pokemonNumber = format(parseInt(st,10));
+      let pokemonNumber = format(pokemon.number);
       cry(pokemonNumber);
       $('#fotoDePerfil').attr('src',`https://assets.pokemon.com/assets/cms2/img/pokedex/full/${pokemonNumber}.png`);
       pokemonInDisplay = pokemonNumber;
